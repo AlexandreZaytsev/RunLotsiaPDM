@@ -70,7 +70,7 @@ Module App
                 Next
             End If
         Next
-        'MainForm.dCbODBCName.DataSource = dsnNames
+        MainForm.dCbODBCName.DataSource = dsnNames
 
         'начнем
         InitTabAccount()
