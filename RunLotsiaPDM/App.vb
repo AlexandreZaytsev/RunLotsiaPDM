@@ -402,7 +402,7 @@ Module App
 
         If Trim(MainForm.kCbDesc.Text) <> "" Then
             Node = xmlDoc.SelectSingleNode("//Keys/Key[@Desc='" & Trim(MainForm.kCbDesc.Text) & "']")
-            If Not Node Is Nothing Then
+            If Node Is Nothing Then
                 CreateSectionKey()
                 Node = xmlDoc.SelectSingleNode("//Keys/Key[@Desc='" & Trim(MainForm.kCbDesc.Text) & "']")
             End If
